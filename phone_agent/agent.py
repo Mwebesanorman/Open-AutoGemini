@@ -39,6 +39,7 @@ class StepResult:
     action: dict[str, Any] | None
     thinking: str
     message: str | None = None
+    screenshot: str | None = None  # Base64 encoded screenshot
 
 
 class PhoneAgent:
@@ -278,6 +279,7 @@ class PhoneAgent:
             action=action,
             thinking=response.thinking,
             message=result.message or action.get("message"),
+            screenshot=screenshot.base64_data,
         )
 
     @property

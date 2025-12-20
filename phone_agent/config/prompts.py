@@ -7,47 +7,47 @@ from phone_agent.config.prompts_en import SYSTEM_PROMPT as SYSTEM_PROMPT_EN
 # Extract tool descriptions to separate strings to keep prompts clean
 TOOL_DESCRIPTIONS_ZH = """
 操作指令及其作用如下：
-- do(action="Tap", element=[x,y])
-    点击屏幕上的特定点。坐标系统从左上角 (0,0) 开始到右下角（999,999)。
-- do(action="Launch", app="xxx")
+- do(action="Tap", element=[x,y], thought="xxx")
+    点击屏幕上的特定点。坐标系统从左上角 (0,0) 开始到右下角（999,999)。thought 为行动原因。
+- do(action="Launch", app="xxx", thought="xxx")
     启动目标app的操作。
-- do(action="Type", text="xxx")  
+- do(action="Type", text="xxx", thought="xxx")  
     在当前聚焦的输入框中输入文本。
-- do(action="Type_Name", text="xxx")  
+- do(action="Type_Name", text="xxx", thought="xxx")  
     输入人名的操作，基本功能同Type。
-- do(action="Interact")  
+- do(action="Interact", thought="xxx")  
     当有多个满足条件的选项时而触发的交互操作，询问用户如何选择。
-- do(action="Swipe", start=[x1,y1], end=[x2,y2])  
+- do(action="Swipe", start=[x1,y1], end=[x2,y2], thought="xxx")  
     滑动操作，通过从起始坐标拖动到结束坐标来执行滑动手势。
-- do(action="Note", message="True")  
+- do(action="Note", message="True", thought="xxx")  
     记录当前页面内容以便后续总结。
-- do(action="Call_API", instruction="xxx")  
+- do(action="Call_API", instruction="xxx", thought="xxx")  
     总结或评论内容。
-- do(action="Long Press", element=[x,y])  
+- do(action="Long Press", element=[x,y], thought="xxx")  
     长按操作。
-- do(action="Double Tap", element=[x,y])  
+- do(action="Double Tap", element=[x,y], thought="xxx")  
     双击操作。
-- do(action="Take_over", message="xxx")  
+- do(action="Take_over", message="xxx", thought="xxx")  
     接管操作，验证阶段需要用户协助。
-- do(action="Back")  
+- do(action="Back", thought="xxx")  
     返回操作。
-- do(action="Home") 
+- do(action="Home", thought="xxx") 
     回到系统桌面的操作。
-- do(action="Wait", duration="x seconds")  
+- do(action="Wait", duration="x seconds", thought="xxx")  
     等待页面加载。
-- finish(message="xxx")  
+- finish(message="xxx", thought="xxx")  
     结束任务的操作。
 """
 
 TOOL_DESCRIPTIONS_EN = """
 Available actions:
-- do(action="Tap", element=[x,y])
-- do(action="Launch", app="Settings")
-- do(action="Type", text="Hello")
-- do(action="Swipe", start=[x1,y1], end=[x2,y2])
-- do(action="Back")
-- do(action="Home")
-- finish(message="Task completed.")
+- do(action="Tap", element=[x,y], thought="xxx")
+- do(action="Launch", app="Settings", thought="xxx")
+- do(action="Type", text="Hello", thought="xxx")
+- do(action="Swipe", start=[x1,y1], end=[x2,y2], thought="xxx")
+- do(action="Back", thought="xxx")
+- do(action="Home", thought="xxx")
+- finish(message="Task completed.", thought="xxx")
 """
 
 # Format instructions for non-native tool calling models

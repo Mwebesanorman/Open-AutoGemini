@@ -15,12 +15,16 @@ GEMINI_TOOLS = [
                             "items": {"type": "integer"},
                             "description": "点击坐标 [x, y]"
                         },
+                        "thought": {
+                            "type": "string",
+                            "description": "当前的思考和行动原因"
+                        },
                         "message": {
                             "type": "string", 
                             "description": "涉及财产、支付、隐私等敏感按钮时的说明"
                         }
                     },
-                    "required": ["element"]
+                    "required": ["element", "thought"]
                 }
             },
             {
@@ -29,9 +33,10 @@ GEMINI_TOOLS = [
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "app": {"type": "string", "description": "应用名称"}
+                        "app": {"type": "string", "description": "应用名称"},
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
                     },
-                    "required": ["app"]
+                    "required": ["app", "thought"]
                 }
             },
             {
@@ -40,9 +45,10 @@ GEMINI_TOOLS = [
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "text": {"type": "string", "description": "要输入的文本内容"}
+                        "text": {"type": "string", "description": "要输入的文本内容"},
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
                     },
-                    "required": ["text"]
+                    "required": ["text", "thought"]
                 }
             },
             {
@@ -51,15 +57,22 @@ GEMINI_TOOLS = [
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "text": {"type": "string", "description": "要输入的人名"}
+                        "text": {"type": "string", "description": "要输入的人名"},
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
                     },
-                    "required": ["text"]
+                    "required": ["text", "thought"]
                 }
             },
             {
                 "name": "Interact",
                 "description": "当有多个满足条件的选项时而触发的交互操作，询问用户如何选择。",
-                "parameters": {"type": "object", "properties": {}}
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
+                    },
+                    "required": ["thought"]
+                }
             },
             {
                 "name": "Swipe",
@@ -76,9 +89,13 @@ GEMINI_TOOLS = [
                             "type": "array",
                             "items": {"type": "integer"},
                             "description": "结束坐标 [x2, y2]"
+                        },
+                        "thought": {
+                            "type": "string",
+                            "description": "当前的思考和行动原因"
                         }
                     },
-                    "required": ["start", "end"]
+                    "required": ["start", "end", "thought"]
                 }
             },
             {
@@ -87,9 +104,10 @@ GEMINI_TOOLS = [
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "message": {"type": "string", "description": "记录的消息或状态，如 'True'"}
+                        "message": {"type": "string", "description": "记录的消息或状态，如 'True'"},
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
                     },
-                    "required": ["message"]
+                    "required": ["message", "thought"]
                 }
             },
             {
@@ -98,9 +116,10 @@ GEMINI_TOOLS = [
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "instruction": {"type": "string", "description": "总结或评论的指令"}
+                        "instruction": {"type": "string", "description": "总结或评论的指令"},
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
                     },
-                    "required": ["instruction"]
+                    "required": ["instruction", "thought"]
                 }
             },
             {
@@ -113,9 +132,13 @@ GEMINI_TOOLS = [
                             "type": "array",
                             "items": {"type": "integer"},
                             "description": "长按坐标 [x, y]"
+                        },
+                        "thought": {
+                            "type": "string",
+                            "description": "当前的思考和行动原因"
                         }
                     },
-                    "required": ["element"]
+                    "required": ["element", "thought"]
                 }
             },
             {
@@ -128,9 +151,13 @@ GEMINI_TOOLS = [
                             "type": "array",
                             "items": {"type": "integer"},
                             "description": "双击坐标 [x, y]"
+                        },
+                        "thought": {
+                            "type": "string",
+                            "description": "当前的思考和行动原因"
                         }
                     },
-                    "required": ["element"]
+                    "required": ["element", "thought"]
                 }
             },
             {
@@ -139,20 +166,33 @@ GEMINI_TOOLS = [
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "message": {"type": "string", "description": "接管的原因或说明"}
+                        "message": {"type": "string", "description": "接管的原因或说明"},
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
                     },
-                    "required": ["message"]
+                    "required": ["message", "thought"]
                 }
             },
             {
                 "name": "Back",
                 "description": "导航返回到上一个屏幕或关闭当前对话框。",
-                "parameters": {"type": "object", "properties": {}}
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
+                    },
+                    "required": ["thought"]
+                }
             },
             {
                 "name": "Home",
                 "description": "回到系统桌面的操作。",
-                "parameters": {"type": "object", "properties": {}}
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
+                    },
+                    "required": ["thought"]
+                }
             },
             {
                 "name": "Wait",
@@ -160,9 +200,10 @@ GEMINI_TOOLS = [
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "duration": {"type": "string", "description": "等待秒数，如 '2 seconds'"}
+                        "duration": {"type": "string", "description": "等待秒数，如 '2 seconds'"},
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
                     },
-                    "required": ["duration"]
+                    "required": ["duration", "thought"]
                 }
             },
             {
@@ -171,9 +212,10 @@ GEMINI_TOOLS = [
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "message": {"type": "string", "description": "任务终止时的总结信息"}
+                        "message": {"type": "string", "description": "任务终止时的总结信息"},
+                        "thought": {"type": "string", "description": "当前的思考和行动原因"}
                     },
-                    "required": ["message"]
+                    "required": ["message", "thought"]
                 }
             }
         ]
