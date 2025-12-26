@@ -26,7 +26,7 @@ Open-AutoGemini 是一个基于 Gemini 驱动的开源手机端智能助理框�
 ### 3. 安装与运行
 ```bash
 # 克隆项目
-git clone https://github.com/zai-org/Open-AutoGemini.git
+git clone https://github.com/HCPTangHY/Open-AutoGemini.git
 cd Open-AutoGemini
 
 # 安装依赖
@@ -130,7 +130,7 @@ pip install -e .
 
 ```
 访问文档，为我安装 Open-AutoGemini
-https://raw.githubusercontent.com/zai-org/Open-AutoGemini/refs/heads/main/README.md
+https://raw.githubusercontent.com/HCPTangHY/Open-AutoGemini/refs/heads/main/README.md
 ```
 
 ## 项目介绍 (原)
@@ -1009,7 +1009,7 @@ adb devices
 
 ```bash
 # 1. 克隆仓库(如果还没有克隆)
-git clone https://github.com/zai-org/Open-AutoGemini.git
+git clone https://github.com/HCPTangHY/Open-AutoGemini.git
 cd Open-AutoGemini
 
 # 2. 创建虚拟环境(推荐)

@@ -25,7 +25,7 @@ Ensure your computer has Python 3.10+ installed and your phone is connected (wit
 ### 3. Installation & Running
 ```bash
 # Clone the project
-git clone https://github.com/zai-org/Open-AutoGemini.git
+git clone https://github.com/HCPTangHY/Open-AutoGemini.git
 cd Open-AutoGemini
 
 # Install dependencies
@@ -132,7 +132,7 @@ You can use Claude Code with [GLM Coding Plan](https://z.ai/subscribe) and enter
 
 ```
 Access the documentation and install Open-AutoGemini for me
-https://raw.githubusercontent.com/zai-org/Open-AutoGemini/refs/heads/main/README_en.md
+https://raw.githubusercontent.com/HCPTangHY/Open-AutoGemini/refs/heads/main/README_en.md
 ```
 
 ## Project Introduction (Original)
@@ -912,7 +912,7 @@ adb devices
 
 ```bash
 # 1. Clone repository (if not already cloned)
-git clone https://github.com/zai-org/Open-AutoGemini.git
+git clone https://github.com/HCPTangHY/Open-AutoGemini.git
 cd Open-AutoGemini
 
 # 2. Create virtual environment (recommended)
